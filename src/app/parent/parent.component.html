@@ -1,0 +1,11 @@
+<fieldset >
+ <input type="text" [(ngModel)]="name" />
+ <input type="text" (keyup)="changeName()" />
+  parent - {{counter}}
+  <button (click)="call()">Call</button>
+
+  <div  style="display: flex;">
+    <app-patient [name]="name"></app-patient>
+    <app-employee [data]="data"></app-employee>
+  </div>
+</fieldset>

@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 git 'https://github.com/sunrawat/jks.git'
+                sh 'npm install'
             }
         }
         stage('build') {

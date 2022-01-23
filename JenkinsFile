@@ -8,6 +8,7 @@ pipeline {
                 git 'https://github.com/sunrawat/jks.git'
                 sh 'npm install'
                 sh 'npm run build'
+                sh 'mv dist/learn/* /var/www/html'
             }
         }
         stage('build') {
